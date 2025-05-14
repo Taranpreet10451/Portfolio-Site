@@ -44,13 +44,13 @@ const EducationSection = () => {
       cgpa: "8.97/10"
     },
     {
-      institution: "Govt. High School and College, Pinjore",
+      institution: "Girls High School and College, Prayagraj",
       degree: "Class XII",
       duration: "May 2022",
       cgpa: "93%"
     },
     {
-      institution: "Govt. High School and College, Pinjore",
+      institution: "Girls High School and College, Prayagraj",
       degree: "Class X",
       duration: "May 2020",
       cgpa: "91%"

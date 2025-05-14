@@ -1,5 +1,4 @@
-
-import { Github, Mail, Linkedin, Instagram } from "lucide-react";
+import { Github, Mail, Linkedin, Phone } from "lucide-react";
 import { useContactInfo } from "@/hooks/useContactInfo";
 import { toast } from "@/components/ui/use-toast";
 
@@ -22,12 +21,13 @@ const Footer = () => {
     
     switch(type) {
       case 'email':
-        url = `https://mail.google.com/mail/?view=cm&fs=1&to=taranpreetkaur1641@gmail.com`;
+        url = `mailto:${value}`;
         break;
       case 'linkedin':
+        url = value.startsWith('http') ? value : `https://${value}`;
+        break;
       case 'github':
-      case 'instagram':
-        url = value;
+        url = value.startsWith('http') ? value : `https://${value}`;
         break;
       case 'phone':
         url = `tel:${value}`;
@@ -98,7 +98,7 @@ const Footer = () => {
                     className="w-10 h-10 bg-portfolio-primary rounded-full flex items-center justify-center hover:bg-portfolio-secondary transition-colors"
                     aria-label="Phone"
                   >
-                    <Instagram size={20} />
+                    <Phone size={20} />
                   </button>
                 </>
               )}
@@ -161,7 +161,7 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
-          <p>&copy; {currentYear} Taranpreet Kaur. All rights reserved.</p>
+          <p>© {currentYear} Taranpreet Kaur. All rights reserved.</p>
         </div>
       </div>
     </footer>

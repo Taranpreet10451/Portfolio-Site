@@ -11,10 +11,10 @@ interface ProjectCardProps {
   technologies: string[];
   delay: number;
   image?: string;
-  githubLink: string; // Added githubLink prop
+  githubUrl?: string; // Added optional githubUrl prop
 }
 
-const ProjectCard = ({ title, description, achievements, technologies, delay, image, githubLink }: ProjectCardProps) => {
+const ProjectCard = ({ title, description, achievements, technologies, delay, image, githubUrl }: ProjectCardProps) => {
   const ref = useRef<HTMLDivElement>(null);
   const isInView = useIntersectionObserver(ref, { threshold: 0.1 });
   
@@ -49,14 +49,24 @@ const ProjectCard = ({ title, description, achievements, technologies, delay, im
         </div>
       </CardContent>
       <CardFooter>
-        <a href={githubLink} target="_blank" rel="noopener noreferrer" className="w-full">
+        {githubUrl ? (
+          <a
+            href={githubUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full text-center py-2 px-4 border border-portfolio-primary text-portfolio-primary rounded-md hover:bg-portfolio-primary/10 transition-colors"
+          >
+            View Project
+          </a>
+        ) : (
           <Button 
             variant="outline" 
             className="w-full text-portfolio-primary border-portfolio-primary hover:bg-portfolio-primary/10"
+            disabled
           >
             View Project
           </Button>
-        </a>
+        )}
       </CardFooter>
     </Card>
   );
@@ -74,7 +84,7 @@ const ProjectsSection = () => {
       ],
       technologies: ["Python", "Random Forest", "Logistic Regression", "Flask", "Machine Learning"],
       image: "https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=800&q=80",
-      githubLink: "https://github.com/Taranpreet10451/KrishiAI" // Replace with actual GitHub link
+      githubUrl: "https://github.com/Taranpreet10451/KrishiAI", // Add GitHub URL if available
     },
     {
       title: "Real-Time Object Detection Using LiDAR",
@@ -85,7 +95,7 @@ const ProjectsSection = () => {
       ],
       technologies: ["MATLAB", "LiDAR", "Object Detection", "Algorithm Design"],
       image: "https://images.unsplash.com/photo-1557264337-e8a93017fe92?auto=format&fit=crop&w=800&q=80",
-      githubLink: "https://github.com/Taranpreet10451/Real-Time-Object-Detection-Using-LiDAR" // Replace with actual GitHub link
+      githubUrl: "", // Add GitHub URL if available
     },
     {
       title: "VITALK Social Media App",
@@ -96,7 +106,7 @@ const ProjectsSection = () => {
       ],
       technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
       image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80",
-      githubLink: "https://github.com/Taranpreet10451/VITalk_Calender" // Replace with actual GitHub link
+      githubUrl: "https://github.com/Taranpreet10451/VITALK/tree/main", // Replace with your actual GitHub URL
     },
     {
       title: "Dementia Prediction",
@@ -107,7 +117,7 @@ const ProjectsSection = () => {
       ],
       technologies: ["Python", "Random Forest", "Data Visualization", "Machine Learning"],
       image: "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=800&q=80",
-      githubLink: "https://github.com/Taranpreet10451/Dementia-Prediction" // Replace with actual GitHub link
+      githubUrl: "https://github.com/Taranpreet10451/Dementia-Prediction", 
     }
   ];
 
@@ -125,7 +135,7 @@ const ProjectsSection = () => {
               technologies={project.technologies}
               delay={index}
               image={project.image}
-              githubLink={project.githubLink}
+              githubUrl={project.githubUrl}
             />
           ))}
         </div>

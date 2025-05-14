@@ -1,68 +1,49 @@
-# Taranpreet Kaur's Portfolio
+# Portfolio
 
-Welcome to my portfolio! I'm a B.Tech Computer Science student at VIT University with a passion for machine learning, web development, and innovative problem-solving. This repository showcases my projects, skills, and achievements.
+## How can I edit this code?
 
-## About Me
-- **Email**: taranpreetkaur1641@gmail.com
-- **LinkedIn**: [linkedin.com/in/taranpreet-kaur-0b3941251](https://linkedin.com/in/taranpreet-kaur-0b3941251)
-- **GitHub**: [github.com/Taranpreet10451](https://github.com/Taranpreet10451)
-- **Education**: B.Tech in Computer Science, VIT University (CGPA: 8.97/10, 2022–Present)
-- **Languages**: English, Hindi, Punjabi
+**Use your preferred IDE**
 
-I specialize in building impactful solutions using machine learning, web technologies, and data analytics, with a focus on real-world applications.
+If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected.
 
-## Technical Skills
-- **Programming**: Python (NumPy, Pandas, Seaborn, Scikit-learn), Java, C++, JavaScript
-- **Web Development**: HTML, CSS, ReactJS, NodeJS
-- **Databases**: MySQL
-- **Tools & Frameworks**: PowerBI, Flask, MATLAB
-- **Concepts**: Data Structures & Algorithms, Machine Learning
+The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
-## Certifications
-- MATLAB Onramp
-- Bits and Bytes of Computer Networking (Coursera)
-- Python (Stanford University's Code in Place)
-- Java (HackerRank)
-- MySQL (HackerRank)
+Follow these steps:
 
-## Featured Projects
-### Soil Nutrient Analysis (2023)
-- Developed a real-time soil evaluation system using Random Forest and Logistic Regression.
-- Achieved 95.3% accuracy in soil health classification, reducing nutrient waste by 15% across 500 hectares.
-- Built a Flask-based backend for seamless sensor integration.
-- **Tech Stack**: Python, Scikit-learn, Flask
+```sh
+# Step 1: Clone the repository using the project's Git URL.
+git clone <YOUR_GIT_URL>
 
-### Real-Time Object Detection Using LiDAR (Sep 2023–Ongoing)
-- Integrated LiDAR data with custom MATLAB algorithms, improving detection speed by 25% for 1,000+ data points.
-- Collaborated with a 5-person team to deploy efficient real-time solutions.
-- **Tech Stack**: MATLAB, LiDAR
+# Step 2: Navigate to the project directory.
+cd <YOUR_PROJECT_NAME>
 
-### VITalk (Feb 2024–May 2024)
-- Designed a social media app for college students with 5,000+ monthly active users, featuring posts, events, and chat.
-- Reduced load time by 30% using React and Node.js with agile workflows.
-- **Tech Stack**: HTML, CSS, ReactJS, NodeJS
+# Step 3: Install the necessary dependencies.
+npm i
 
-### Dementia Prediction (Nov 2023–Dec 2023)
-- Built a predictive model using Random Forest, achieving 93% accuracy on the OASIS dataset.
-- Led preprocessing of 15+ features and created 8 visualizations (e.g., heatmaps, scatter plots).
-- **Tech Stack**: Python, Scikit-learn, Seaborn
+# Step 4: Start the development server with auto-reloading and an instant preview.
+npm run dev
+```
 
-## Internship Experience
-### Open-Source Coding, GSSoC'24 (May 2024–Jul 2024)
-- Resolved 10+ issues in machine learning and web development projects.
-- Enhanced functionality using Python, React, and MySQL in a collaborative remote setup.
-- Earned the Explorer Badge.
+**Edit a file directly in GitHub**
 
-## Achievements & Extracurriculars
-- **Competitions**: 
-  - Solved technical challenges in Flipkart Runaway 2024 (Python).
-  - Competed in Google Girl Hackathon 2024 (ReactJS, ML).
-  - 1st Prize in Poster Making and RangManch (Dramatics Club).
-  - 3rd Prize in CardioQuest (Health-O-Tech Club).
-- **Leadership**: 
-  - Directed Bit-by-Bit Club as Event Team Lead, organizing ML and GitHub workshops for 150+ students.
-  - Led an environmental conservation event for NTC Club, engaging 200+ students.
-- **Data Analytics**: Completed Forage Data Analytics Job Simulation (Accenture), producing visualizations.
+- Navigate to the desired file(s).
+- Click the "Edit" button (pencil icon) at the top right of the file view.
+- Make your changes and commit the changes.
 
-## Contact
-Feel free to reach out via [email](mailto:taranpreetkaur1641@gmail.com) or connect with me on [LinkedIn](https://linkedin.com/in/taranpreet-kaur-0b3941251) for collaboration or opportunities!
+**Use GitHub Codespaces**
+
+- Navigate to the main page of your repository.
+- Click on the "Code" button (green button) near the top right.
+- Select the "Codespaces" tab.
+- Click on "New codespace" to launch a new Codespace environment.
+- Edit files directly within the Codespace and commit and push your changes once you're done.
+
+## What technologies are used for this project?
+
+This project is built with:
+
+- Vite
+- TypeScript
+- React
+- shadcn-ui
+- Tailwind CSS

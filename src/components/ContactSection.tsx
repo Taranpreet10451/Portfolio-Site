@@ -1,8 +1,8 @@
+
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import * as z from 'zod';
-import emailjs from '@emailjs/browser';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -52,13 +52,8 @@ const ContactSection = () => {
     setIsSubmitting(true);
     
     try {
-      // Send email using EmailJS
-      await emailjs.send(
-        'service_jem5n9g', // Replace with your EmailJS Service ID
-        'template_a4ykspp', // Replace with your EmailJS Template ID
-        values,
-        '46QVuMS5g51qxPjia' // Replace with your EmailJS Public Key
-      );
+      // Simulate API call
+      await new Promise((resolve) => setTimeout(resolve, 1000));
       
       // Success toast
       toast({
@@ -69,7 +64,6 @@ const ContactSection = () => {
       // Reset form
       form.reset();
     } catch (error) {
-      console.error('EmailJS error:', error);
       toast({
         title: 'Error!',
         description: 'There was a problem sending your message. Please try again.',
@@ -91,18 +85,15 @@ const ContactSection = () => {
                 <CardTitle className="text-2xl font-semibold">Contact Information</CardTitle>
               </CardHeader>
               <CardContent className="space-y-6">
-         <div className="flex items-start gap-4">
-  <Mail className="w-5 h-5 text-portfolio-primary mt-1" />
-  <div>
-    <p className="font-medium">Email</p>
-    <a
-      href="https://mail.google.com/mail/?view=cm&fs=1&to=taranpreetkaur1641@gmail.com"
-      className="text-gray-600 dark:text-gray-400 hover:text-portfolio-primary break-all"
-    >
-      {loading ? "Loading..." : contactInfo?.email || "taranpreetkaur1641@gmail.com"}
-    </a>
-  </div>
-</div>
+                <div className="flex items-start gap-4">
+                  <Mail className="w-5 h-5 text-portfolio-primary mt-1" />
+                  <div>
+                    <p className="font-medium">Email</p>
+                    <p className="text-gray-600 dark:text-gray-400 break-all">
+                      {loading ? "Loading..." : contactInfo?.email || "taranpreetkaur1641@gmail.com"}
+                    </p>
+                  </div>
+                </div>
                 
                 <div className="flex items-start gap-4">
                   <Phone className="w-5 h-5 text-portfolio-primary mt-1" />
