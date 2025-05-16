@@ -1,4 +1,3 @@
-
 import { User, Briefcase, Mail, Phone, Linkedin, Github } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { useContactInfo } from '@/hooks/useContactInfo';
@@ -14,31 +13,16 @@ const AboutSection = () => {
           <div className="lg:w-1/2">
             <h3 className="text-2xl font-semibold mb-4">Who I Am</h3>
             <p className="mb-4 text-gray-700 dark:text-gray-300">
-              I am Taranpreet Kaur, a passionate and driven Computer Science
-              Engineering student currently pursuing my B.Tech at VIT
-              University. I possess a strong technical foundation with expertise in
-              Python (including Numpy, Pandas, and Seaborn), C, C++, and
-              JavaScript, alongside practical knowledge of MySQL, Machine
-              Learning, and Power BI.
+              I am Taranpreet Kaur, a motivated Computer Science Engineering student pursuing my B.Tech at VIT University. I have a solid foundation in programming languages including Python (with libraries like NumPy, Pandas, and Seaborn), C, C++, and JavaScript, along with practical experience in MySQL, Machine Learning, and Power BI.
             </p>
             <p className="mb-4 text-gray-700 dark:text-gray-300">
-              My commitment to learning is evident through certifications such as MATLAB Onramp, 
-              Python (Stanford University's Code in Place), and MySQL (HackerRank).
+              I have earned certifications such as MATLAB Onramp, Python from Stanford University’s Code in Place, and MySQL from HackerRank, reflecting my commitment to continuous learning and skill development.
+            </p>
+            <p className="mb-4 text-gray-700 dark:text-gray-300">
+              My key projects include LidarSight, where I led real-time object detection using LiDAR data and MATLAB, and Dementia Prediction, where I developed machine learning models achieving 93% accuracy.
             </p>
             <p className="mb-6 text-gray-700 dark:text-gray-300">
-              Throughout my academic journey, I have applied my technical skills to
-              meaningful projects. Notable among these are LIDAR Marvel,
-              where I led the implementation of real-time object detection using
-              LiDAR data and MATLAB, and Dementia Prediction, where I
-              achieved 93% accuracy in predicting dementia using machine
-              learning models.
-            </p>
-            <p className="mb-6 text-gray-700 dark:text-gray-300">
-              I have further honed my practical skills through an internship at GSSoC'24,
-              contributing to diverse machine learning and web development projects, earning recognition with
-              the Explorer Badge. As an Event Team Lead at the Bit-by-Bit Club, I have organized workshops
-              and events, showcasing my leadership and collaboration skills. I am dedicated to leveraging
-              technology and innovation to create impactful solutions for real-world challenges.
+              I gained hands-on experience during my internship at GSSoC’24 by contributing to various machine learning and web development projects, earning the Explorer Badge. Additionally, as Event Team Lead at Bit-by-Bit Club, I organized workshops and events, honing my leadership and teamwork skills. I am passionate about leveraging technology and innovation to develop impactful solutions for real-world challenges.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a 

@@ -87,7 +87,7 @@ const ProjectsSection = () => {
       githubUrl: "https://github.com/Taranpreet10451/KrishiAI", // Add GitHub URL if available
     },
     {
-      title: "Real-Time Object Detection Using LiDAR",
+      title: "LidarSight: Real-Time Object Detection Using LiDAR Data",
       description: "Advanced object detection system using LiDAR technology",
       achievements: [
         "Integrated LiDAR data with custom MATLAB algorithms, accelerating real-time object detection by 25% for 1,000+ data points",
@@ -95,7 +95,7 @@ const ProjectsSection = () => {
       ],
       technologies: ["MATLAB", "LiDAR", "Object Detection", "Algorithm Design"],
       image: "https://images.unsplash.com/photo-1557264337-e8a93017fe92?auto=format&fit=crop&w=800&q=80",
-      githubUrl: "", // Add GitHub URL if available
+      githubUrl: "https://github.com/Taranpreet10451/LidarSight-Real-Time-Object-Detection-Using-LiDAR-Data", // Add GitHub URL if available
     },
     {
       title: "VITALK Social Media App",
